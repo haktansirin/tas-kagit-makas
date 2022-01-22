@@ -1,0 +1,49 @@
+.button-primary {
+  @include centerAlign();
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 15px 35px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &-icon {
+    @include centerAlign();
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    transform: translateY(100%);
+    background-color: $white-color;
+    transition: $transition-base;
+  }
+
+  &:hover {
+    .button-primary-icon {
+      transform: translate(0);
+    }
+  }
+
+  @media (max-width: $md) {
+    font-size: 14px;
+    padding: 10px 20px;
+
+    &-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+.validation-message {
+  display: none;
+  font-weight: 700;
+
+  &.error {
+    color: #e74c3c;
+  }
+}
+
+.text-primary {
+  color: $primary-color;
+}

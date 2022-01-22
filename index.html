@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Taş - Kağıt - Makas</title>
+  </head>
+  <body>
+    <!-- welcome page -->
+    <div class="page welcome-page js-welcome-page">
+      <div class="logo">Taş - Kağıt - Makas</div>
+      <div class="welcome-page-banner">
+        <img src="assets/img/rock.png" alt="Rock" loading="lazy" />
+        <img src="assets/img/paper.png" alt="Paper" loading="lazy" />
+        <img src="assets/img/scissors.png" alt="Scissors" loading="lazy" />
+      </div>
+      <button type="button" class="button-primary js-start-play">
+        BAŞLA
+        <div class="button-primary-icon">
+          <i class="icon-play"></i>
+        </div>
+      </button>
+    </div>
+    <!-- username -->
+    <div class="page username-page js-username-page hide">
+      <div class="page-title">ADINI GİR</div>
+      <input type="text" name="username" id="username" autocomplete="off" />
+      <div class="validation-message js-validate"></div>
+      <button type="button" class="button-primary js-more">DEVAM</button>
+    </div>
+    <!-- game area -->
+    <div class="page game-area-page js-game-area-page">
+      <div class="game-area-header">
+        <div class="username player-name"></div>
+        <div class="score">
+          <div class="score-content player-score"></div>
+          <strong class="text-primary">VS</strong>
+          <div class="score-content computer-score"></div>
+        </div>
+        <div class="username">Computer</div>
+      </div>
+      <div class="game-area-content">
+        <div class="options player-select">
+          <div class="option" data-option="rock">
+            <img src="assets/img/rock.png" alt="Rock" />
+          </div>
+          <div class="option" data-option="paper">
+            <img src="assets/img/paper.png" alt="Paper" />
+          </div>
+          <div class="option" data-option="scissors">
+            <img src="assets/img/scissors.png" alt="Scissors" />
+          </div>
+        </div>
+      </div>
+      <div class="game-area-content">
+        <div class="options computer-select">
+          <div class="option">
+            <img src="assets/img/question.png" alt="Question" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- game over -->
+    <div class="game-over js-game-over-page">
+      <div class="game-over-content">
+        <div class="game-over-text">
+          <div class="game-over-title game-over-player-name"></div>
+          <div class="game-over-subtitle game-state"></div>
+          <button type="button" class="play-again js-play-again">
+            <i class="icon-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- device landscape message -->
+    <div class="device-message">
+      <div class="device-message-icon">
+        <i class="icon-mobile"></i>
+      </div>
+      Lütfen telefonunuzu yatay konuma getiriniz.
+    </div>
+    <!-- scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
